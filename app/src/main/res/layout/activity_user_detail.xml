@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="8dp"
+android:layout_marginTop="4dp"
+android:layout_marginEnd="8dp"
+android:layout_marginBottom="4dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="2dp"
+app:cardUseCompatPadding="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_card"
+    android:padding="12dp">
+
+    <!-- Название токена -->
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_details"
+        android:textColor="@color/textThird"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name_text"
+        android:textColor="@color/textPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetail" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textAlignment="center"
+        android:textColor="@color/textSecondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUserNameText"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetail" />
+
+    <TextView
+        android:id="@+id/tvUserEmailText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_email_text"
+        android:textColor="@color/textPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNameText" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_email"
+        android:textColor="@color/textSecondary"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUserEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvUserPhoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_phone_text"
+        android:textColor="@color/textPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserEmailText" />
+
+    <TextView
+        android:id="@+id/tvUserPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_phone"
+        android:textColor="@color/textSecondary"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUserPhoneText"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserEmail" />
+
+    <TextView
+        android:id="@+id/tvUserCityText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_city_text"
+        android:textColor="@color/textPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserPhoneText" />
+
+    <TextView
+        android:id="@+id/tvUserCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_city"
+        android:textColor="@color/textSecondary"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUserCityText"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
