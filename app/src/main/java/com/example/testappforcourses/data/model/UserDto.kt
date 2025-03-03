@@ -1,5 +1,6 @@
 package com.example.testappforcourses.data.model
 
+import com.example.testappforcourses.data.local.entity.UserEntity
 import com.example.testappforcourses.domain.model.User
 
 data class UserDto(
@@ -14,4 +15,8 @@ data class AddressDto(val city: String)
 
 fun UserDto.toDomain(): User {
     return User(id, name, email, phone, address.city)
+}
+
+fun UserDto.toEntity(): UserEntity {
+    return UserEntity(id, name, email, phone, address.city)
 }

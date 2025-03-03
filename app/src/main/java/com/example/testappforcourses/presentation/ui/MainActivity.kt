@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.users.observe(this) { users ->
             userAdapter.updateData(users)
         }
+        viewModel.fetchUsersFromApi()
     }
 
     private fun openUserDetails(user: User) {

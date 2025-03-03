@@ -13,4 +13,8 @@ class GetUsersUseCase @Inject constructor(
     fun execute(): Flow<List<User>> = flow {
         emit(repository.getUsersUseCase())
     }.catch { emit(emptyList()) }
+
+    suspend fun fetchAndSaveUsers() {
+        repository.fetchAndSaveUsers()
+    }
 }
